@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#view {
+    width: 170px;
+    height: 170px;
+    margin: 80px auto 0 auto;
+}
+
+#cube {
+    margin: 100;
+    -webkit-transform-origin: 80px 80px 0;
+    -moz-transform-origin: 80px 80px 0;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    /*-webkit-perspective: 138px;*/
+    -webkit-animation: animation 5s ease-in-out 0s infinite;
+    -moz-animation: animation 5s ease-in-out 0s infinite;
+    animation: animation 5s ease-in-out 0s infinite;
+}
+
+/*动画*/
+@keyframes animation {
+    from,
+    to {}
+    16% {
+        transform: rotateY(-90deg);
+        
+    }
+    33% {
+        transform: rotateX(-90deg)rotateZ(135deg);
+
+    }
+    50% {
+        transform: rotateY(225deg)rotateZ(135deg);
+
+    }
+    66% {
+        transform: rotateY(135deg)rotateX(135deg);
+
+    }
+    83% {
+        transform: rotateX(135deg);
+
+    }
+}
+
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+        
+    }
+    33% {
+        -webkit-transform: rotateX(-90deg)rotateZ(135deg);
+
+    }
+    50% {
+        -webkit-transform: rotateY(225deg)rotateZ(135deg);
+
+    }
+    66% {
+        -webkit-transform: rotateY(135deg)rotateX(135deg);
+
+    }
+    83% {
+        -webkit-transform: rotateX(135deg);
+
+    }
+}
+.cube {
+        width: 240px;
+        height: 240px;
+        margin: 120px auto;
+    }
+    
+    ul li {
+    	margin-top: 60px;
+        width: 240px;
+        height: 240px;
+        list-style: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        font-size: 100px;
+        line-height: 200px;
+        /*background: rgba(0, 0, 0, 0.3);*/
+    }
+    
+    ul li:nth-child(1) {
+    	/*蓝*/
+    	background: rgba(0, 255, 255, 0.8);
+        -webkit-transform: rotateX(90deg) translateZ(120px);
+        -moz-transform: rotateX(90deg) translateZ(120px);
+
+    }
+    
+    ul li:nth-child(2) {
+    	 background: rgba(123, 104, 238, 0.8);
+        -webkit-transform: rotateX(270deg) translateZ(120px);
+        -moz-transform: rotateX(270deg) translateZ(120px);
+
+    }
+    
+
+    ul li:nth-child(3) {
+    	background: rgba(0, 255, 127, 0.8);
+        -webkit-transform: rotateY(90deg) translateZ(120px);
+        -moz-transform: rotateY(90deg) translateZ(120px);
+
+    }
+    
+    ul li:nth-child(4) {
+    	background: rgba(255, 255, 0, 0.8);
+        -webkit-transform: rotateY(270deg) translateZ(120px);
+        -moz-transform: rotateY(270deg) translateZ(120px);
+
+    }
+    
+    ul li:nth-child(5) {
+    	/*红*/
+    	background: rgba(255, 0, 0, 0.8);
+        -webkit-transform: translateZ(-120px);
+        -moz-transform: translateZ(-120px);
+
+    }
+    
+    ul li:nth-child(6) {
+
+    	background: rgba(255, 255, 255, 0.8);
+        -webkit-transform: translateZ(120px);
+        -moz-transform: translateZ(120px);
+
+    }
+    /*魔方每一个面*/
+    li div {
+        width: 78px;
+        height: 78px;
+        border: 1px solid #fff;
+        float: left;
+        font-size: 30px;
+        color: #eee;
+        text-align: center;
+        line-height: 78px;
+    }
+
